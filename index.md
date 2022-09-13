@@ -10,10 +10,9 @@ hero_link: /research/
 hero_link_text: Current Research
 
 ---
-
 # AutoMerge
 
-This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages. 
+This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages.
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/MetaSLAM/AutoMerge_Server?style=social)
 
@@ -35,7 +34,7 @@ For full instructions, please see the [Documentation](/bulma-clean-theme/docs/)
 
 ## Page Layouts
 
-This demo site showcases the available page layout options. 
+This demo site showcases the available page layout options.
 
 * Sidebar
 * Menubar
