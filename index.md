@@ -5,7 +5,7 @@ layout: page
 callouts: home_callouts
 show_sidebar: true
 hero_height: is-large
-hero_image: /img/web.gif
+hero_image: /img/metaslam.gif
 hero_link: /research/
 hero_link_text: See Our Research
 
