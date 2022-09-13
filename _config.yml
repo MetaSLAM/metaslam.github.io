@@ -5,13 +5,15 @@ tagline: MetaSLAM
 email: hitmaxtom@gmail.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-url: "https://www.csrhymes.com"
+baseurl:
+url: "https://metaslam.github.io"
 permalink: pretty
+
 #favicon: /path/to/favicon.png
 gh_sponsor: chrisrhymes
 # theme: bulma-clean-theme
+
 remote_theme: chrisrhymes/bulma-clean-theme
-baseurl: "https://metaslam.github.io"
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
