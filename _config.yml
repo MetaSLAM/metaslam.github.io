@@ -1,17 +1,17 @@
 # Site Settings
 lang: en
-title: Bulma Clean Theme
-tagline: Bulma Clean Theme
-email: your-email@domain.com
+title: MetaSLAM
+tagline: MetaSLAM
+email: hitmaxtom@gmail.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: "/bulma-clean-theme"
 url: "https://www.csrhymes.com"
 permalink: pretty
 #favicon: /path/to/favicon.png
 gh_sponsor: chrisrhymes
-theme: bulma-clean-theme
+# theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
+baseurl: "https://metaslam.github.io"
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
@@ -29,6 +29,7 @@ disqus:
 
 
 plugins:
+  - github-pages
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
