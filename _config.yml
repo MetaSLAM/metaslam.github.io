@@ -15,8 +15,8 @@ gh_sponsor: chrisrhymes
 
 remote_theme: chrisrhymes/bulma-clean-theme
 #hide_share_buttons: true
-#theme_color: '#eeeeee'
-#fixed_navbar: top
+theme_color: '#eeeeee'
+fixed_navbar: /path/to/favicon.png
 #direction: one of <ltr, rtl, auto>, default: ltr
 
 paginate: 5
