@@ -8,31 +8,31 @@
       link: /softwares/isimloc/
     - name: BioSLAM
       link: /softwares/bioslam/
-- name: Mapping
-  dropdown:
-    - name: AutoMerge
-      link: /softwares/automerge/
-    - name: AutoMerge++
-      link: /softwares/automerge2/
-- name: Exploration
-  dropdown:
-    - name: TARE
-      link: /softwares/tare/
-    - name: MACX
-      link: /softwares/macx/
-- name: Datasets
-  dropdown:
-    - name: ALITA
-      link: /datasets/alita_dataset
-    - name: ALTO
-      link: /datasets/alto_dataset
-    - name: Auto360
-      link: /datasets/auto360_dataset
-- name: Competition
-  dropdown:
-    - name: IROS2022
-      link: /competitions/iros2022
-    - name: ICRA2023
-      link: /competitions/icra2023
-- name: Playground
-  link: /playground/
+# - name: Mapping
+#   dropdown:
+#     - name: AutoMerge
+#       link: /softwares/automerge/
+#     - name: AutoMerge++
+#       link: /softwares/automerge2/
+# - name: Exploration
+#   dropdown:
+#     - name: TARE
+#       link: /softwares/tare/
+#     - name: MACX
+#       link: /softwares/macx/
+# - name: Datasets
+#   dropdown:
+#     - name: ALITA
+#       link: /datasets/alita_dataset
+#     - name: ALTO
+#       link: /datasets/alto_dataset
+#     - name: Auto360
+#       link: /datasets/auto360_dataset
+# - name: Competition
+#   dropdown:
+#     - name: IROS2022
+#       link: /competitions/iros2022
+#     - name: ICRA2023
+#       link: /competitions/icra2023
+# - name: Playground
+#   link: /playground/

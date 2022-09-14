@@ -1,6 +1,6 @@
 ---
 title: MetaSLAM
-subtitle: A Collective Mapping, Localization and Exploration Framework for Long-term and Large-scale Multi-Agent System
+subtitle: A Collective Localization, Mapping and Exploration Framework for Long-term and Large-scale Multi-Agent System
 layout: page
 # callouts: home_callouts
 # show_sidebar: true
@@ -8,8 +8,8 @@ show_sidebar: false
 hide_footer: false
 hero_height: is-large
 hero_image: /img/web.gif
-# hero_link: /research/
-# hero_link_text: Researches
+hero_link: /playground/
+hero_link_text: Playground
 
 # hero_link2: /publications/
 # hero_link_text2: Publications
@@ -20,7 +20,7 @@ hero_image: /img/web.gif
 
 # About MetaSLAM
 
-MetaSLAM is a collective intelligence framework for multi-agent systems under large-scale and long-term opeartion, which includes the current cutting-edge **localization**, **mapping**, **exploration** approaches. MetaSLAM is also a joint non-profit organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries of real-world robotic research.
+MetaSLAM is a collective intelligence framework for multi-agent systems under large-scale and long-term opeartion, which includes the current cutting-edge **localization**, **mapping**, **exploration** approaches. MetaSLAM is also a joint organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries for real-world robotic applications.
 <!-- We are combined with the top-researchers abround the world, [Carnegie Mellon University](https://www.cmu.edu/),  -->
 
 ## Our Mission
