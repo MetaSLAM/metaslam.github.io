@@ -3,11 +3,11 @@ title: Showcase
 subtitle: An example showcase page
 description: An example showcase page to help you easily display your work
 layout: page
-showcase: showcase_example
+# showcase: showcase_example
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: /img/web.gif
+hero_image: /img/posts/spherevlad/2d3d.gif
 ---
 
 <hr>
@@ -23,7 +23,7 @@ To highlight our method's generalization capabilities, we also evaluate the reco
 With one single trained model, i3dLoc can achieve reliable visual localization under random conditions and viewpoints.
 
 <figure>
- <img src="/img/posts/2021-05-25-i3dloc/framework.png" style="width:100%" />
+ <img src="/img/posts/spherevlad/framework.png" style="width:100%" />
 <!-- <img src="/img/posts/2021-05-25-ulsd/smith.png" style="width:31%" /> -->
  <figcaption>
 The framework of the proposed i3dLoc.
@@ -45,7 +45,7 @@ The major contributions of i3dLoc are:
 <hr>
 
 <figure>
- <img src="/img/posts/2021-05-25-i3dloc/domain.png" style="width:100%" />
+ <img src="/img/posts/spherevlad/domain.png" style="width:100%" />
  <figcaption>
   The cross domain image transfer network. We assume the visual inputs include two kinds of features: geometry feature (related to the 3D geometries) and conditional feature (related to illuninations, weathers and seasons, etc).
  </figcaption>
@@ -61,8 +61,8 @@ The training and evaluation dataset includes:
 * Multistory Dataset: we create a indoor dataset by traversing 8 trajectories within a multi-floor area under daytime/nighttime. The average distance for indoor routines is 100~150m. We use trajectories 1~6 for network training, and 7~8 for evaluation.
 
 <figure>
- <img src="/img/posts/2021-05-25-i3dloc/platform.png" style="width:40%" />
- <img src="/img/posts/2021-05-25-i3dloc/map.png" style="width:45%" />
+ <img src="/img/posts/spherevlad/platform.png" style="width:40%" />
+ <img src="/img/posts/spherevlad/map.png" style="width:45%" />
  <figcaption>
 
     The dataset are collected with a LiDAR (VLP16) device, an 360 camera and an inertial measurement unit (IMU). We gathered the indoor and outdoor datasets via recording the raw data from above sensors. Since lacking the ground truth position in indoor or other GPS-denied environments, we use the LiDAR odometry outputs as the ground truth estimation.
