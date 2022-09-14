@@ -25,8 +25,8 @@
 - name: Competition
   dropdown:
     - name: IROS2022
-      link: /competitions/gpr2022ugv
+      link: /competitions/iros2022
     - name: ICRA2023
-      link: /competitions/gpr2022uav
+      link: /competitions/icra2023
 - name: Playground
   link: /playground/
