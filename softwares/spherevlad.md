@@ -72,13 +72,32 @@ The training and evaluation dataset includes:
 
 <br>
 
-## Publications
 
-<hr>
 
-* Peng Yin, Lingyun Xu, Sebastian Scherer "**i3dLoc: Image-to-range Cross-domain Localization Robust to Inconsistent Environmental Conditions**", Robotics: Science and Systems 2021.
+### Publications
 
-<br>
+The general ideas on design and modeling of our custom tiltrotor VTOL and desing of the optimization based dynamic control allocation (so that the system can adapt to actuator failures) are described in the following publication (access on [arXiv](https://arxiv.org/abs/2205.05533)): 
+
+*BibTeX:* 
+
+```
+@article{mousaei2022,
+author={Mohammadreza Mousaei and Junyi Geng and Azarakhsh Keipour and Dongwei Bai and Sebastian Scherer},
+booktitle={arXiv},
+title={Design, Modeling and Control for a Tilt-rotor VTOL UAV in the Presence of Actuator Failure}, 
+year={in press},
+link={https://arxiv.org/abs/2205.05533},
+}
+```
+
+*IEEE Style:* 
+
+```
+M. Mousaei, J. Geng, A. Keipour, D. Bai, and S. Scherer, “Design, Modeling and Control for a Tilt-rotor VTOL UAV in the Presence of Actuator Failure,”, Under review. 
+```
+
+<br/>
+
 
 ### Contact 
 
