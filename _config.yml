@@ -34,6 +34,7 @@ plugins:
   - github-pages
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-scholar
   - jekyll-feed
   - jekyll-seo-tag
   - kramdown-parser-gfm
@@ -85,3 +86,10 @@ collections:
     layout: product
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+
+# scholar:
+#   style: simple-ieee.csl
+#   bibliography_list_tag: "ul.no-bullet"
+  # bibliography_template: bibtemplate
+
+# exclude: [vendor]

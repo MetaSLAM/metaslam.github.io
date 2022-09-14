@@ -1,7 +1,7 @@
 - name: Docs
   link: /docs/
 - name: Publications
-  link: /pubs/
+  link: /publications/
 - name: Core Stack
   link: /#
   dropdown:
