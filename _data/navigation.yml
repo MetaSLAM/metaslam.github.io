@@ -22,15 +22,11 @@
       link: /softwares/macx/
 - name: Datasets
   dropdown:
-    - name: Campus UGV Dataset
-      link: /datasets/campus_ugv_dataset
-    - name: Campus UAV Dataset
-      link: /datasets/campus_uav_dataset
-    - name: Pittsburgh UGV Dataset
-      link: /datasets/pittsburgh_ugv_dataset
-    - name: Pittsburgh to Ohio Dataset
-      link: /datasets/pittsburgh_ohio_dataset
-    - name: Auto360 Dataset
+    - name: ALITA
+      link: /datasets/alita_dataset
+    - name: ALTO
+      link: /datasets/alto_dataset
+    - name: Auto360
       link: /datasets/auto360_dataset
 - name: Competition
   dropdown:
