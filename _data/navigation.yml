@@ -1,17 +1,34 @@
-- name: Docs
-  link: /docs/
-- name: Publications
-  link: /publications/
-- name: Core Stack
-  link: /#
+- name: Research
+  link: /research/
+- name: Datasets
+  link: /datasets/
+- name: Localization
+  dropdown:
+    - name: SphereVLAD
+      link: /softwares/spherevlad/
+    - name: iSimLoc
+      link: /softwares/isimloc/
+    - name: BioSLAM
+      link: /softwares/bioslam/
+- name: Mapping
   dropdown:
     - name: AutoMerge
-      link: /landing/
-    - name: BioSLAM
-      link: /sponsors/
-    - name: MrExplorer
-      link: /gallery/
-    - name: MetaSLAM
-      link: /products/
-- name: Blog
-  link: /blog/
+      link: /softwares/automerge/
+    - name: AutoMerge++
+      link: /softwares/automerge2/
+- name: Exploration
+  dropdown:
+    - name: TARE
+      link: /softwares/tare/
+    - name: Far-Planner
+      link: /softwares/far_planner/
+    - name: MACX
+      link: /softwares/macx/
+- name: Competition
+  dropdown:
+    - name: IROS2022
+      link: /competitions/gpr2022ugv
+    - name: ICRA2023
+      link: /competitions/gpr2022uav
+- name: Playground
+  link: /playground/

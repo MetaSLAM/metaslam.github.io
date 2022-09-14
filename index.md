@@ -2,46 +2,33 @@
 title: MetaSLAM
 subtitle: A Collective Intelligence Framework for Mapping, Localization and Exploration
 layout: page
-callouts: home_callouts
-show_sidebar: true
+# callouts: home_callouts
+# show_sidebar: true
+show_sidebar: false
+hide_footer: false
 hero_height: is-large
 hero_image: /img/web.gif
 hero_link: /research/
-hero_link_text: Current Research
+hero_link_text: Researches
 
+# hero_link2: /publications/
+# hero_link_text2: Publications
+
+# hero_link3: /playground/
+# hero_link_text3: Playground
 ---
-# AutoMerge
 
-This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages.
+# About Us
 
-![GitHub Repo stars](https://img.shields.io/github/stars/MetaSLAM/AutoMerge_Server?style=social)
+MetaSLAM is a joint organization, targeting at cutting-edge robotics localization, mapping, exploration and decision making.
+<!-- We are combined with the top-researchers abround the world, [Carnegie Mellon University](https://www.cmu.edu/),  -->
 
-## Ruby Gem
-
-The ruby gem is available on the Ruby Gems website at the following location. [https://rubygems.org/gems/bulma-clean-theme](https://rubygems.org/gems/bulma-clean-theme).
-
-## GitHub Pages
-
-The theme can be used with GitHub Pages by setting the `remote_theme` in your Jekyll sites `_config.yml`
-
-```yml
-remote_theme: chrisrhymes/bulma-clean-theme
-```
-
-## Documentation
-
-For full instructions, please see the [Documentation](/bulma-clean-theme/docs/)
-
-## Page Layouts
-
-This demo site showcases the available page layout options.
-
-* Sidebar
-* Menubar
-* Tabs
-
-## Supported By JetBrains
-
-JetBrains have kindly provided an Open Source licence to aid in the future development of Bulma Clean Theme.
-
-[![JetBrains](img/jetbrains-variant-4.svg)](https://www.jetbrains.com/?from=bulma-clean-theme)
+# Highlights
+{% assign posts = site.posts | where:"categories","highlights" %}
+<div class="columns is-multiline">
+    {% for post in posts %}
+    <div class="column is-4-desktop is-6-tablet">
+        {% include post-card.html %}
+    </div>
+    {% endfor %}
+</div>
