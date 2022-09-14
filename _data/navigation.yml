@@ -20,8 +20,6 @@
   dropdown:
     - name: TARE
       link: /softwares/tare/
-    - name: Far-Planner
-      link: /softwares/far_planner/
     - name: MACX
       link: /softwares/macx/
 - name: Competition
