@@ -7,57 +7,38 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: /img/web.gif
+hero_image: /img/posts/automerge/automerge_big.gif
 ---
 
-Enabling vertical take-off and landing while providing the ability to fly long ranges opens the door to a wide range of new real-world aircraft applications while improving many existing tasks. Tiltrotor vertical take-off and landing (VTOL) unmanned aerial vehicles (UAVs) are a better choice than fixed-wing and multirotor aircraft for such applications. Prior works on these aircraft have addressed the aerodynamic performance, design, modeling, and control. However, a less explored area is the study of their potential fault tolerance due to their inherent redundancy, which allows them to tolerate some degree of actuation failure. This work introduces tolerance to several types of actuator failures in a tiltrotor VTOL aircraft. We discuss the design and modeling of a custom tiltrotor VTOL UAV, which is a combination of a fixed-wing aircraft and a quadrotor with tilting rotors, where the four propellers can be rotated individually. Then, we analyze the feasible wrench space the vehicle can generate and design the dynamic control allocation so that the system can adapt to actuator failures, benefiting from the configuration redundancy. The proposed approach is lightweight and is implemented as an extension to an already-existing flight control stack. Extensive experiments validate that the system can maintain the controlled flight under different actuator failures. This work is the first study of the tiltrotor VTOL's fault-tolerance that exploits the configuration redundancy to the best of our knowledge.
+## Background and Major Contributions
+
+The visual camera is an attractive device in beyond visual line of sight (B-VLOS) drone operation, since they are low in size, weight, power, and cost, and can provide redundant modality to GPS failures. However, state-of-the-art visual localization algorithms are unable to match visual data that have a significantly different appearance due to illuminations or viewpoints. This paper presents iSimLoc, a condition/viewpoint consistent hierarchical global re-localization approach. The place features of iSimLoc can be utilized to search target images under changing appearances and viewpoints. Additionally, our hierarchical global re-localization module refines in a coarse-to-fine manner, allowing iSimLoc to perform a fast and accurate estimation. We evaluate our method on one dataset with appearance variations and one dataset that focuses on demonstrating large-scale matching over a long flight in complicated environments. On our two datasets, iSimLoc achieves 88.7% and 83.8% successful retrieval rates with 1.5s inferencing time, compared to 45.8% and 39.7% using the next best method. These results demonstrate robust localization in a range of environments.
+
+The major contributions of iSimLoc include:
+
+* **We developped a novel long-term (variant illumiations) and large-scale (150km) UAV navigation method.**
+* **The proposed method can achieve accurate  without been there .**
+* **The proposed method only requires 5~10% original data for model training**
+* **The proposed method can provide large-scale re-localization under challenge terrains.**
 
 <figure>
- <img src="/img/posts/2022-05-20-vtol/VTOL_PS_Label.PNG" alt="Tiltrotor VTOL" />
+ <img src="/img/posts/isimloc/framework.png" style="width:100%" />
+ <figcaption>
+For high and low altitudes, iSimLoc extracts a condition-(illumination) and viewpoint-invariant place descriptor. Only the descriptor needs to be stored and matched. Larger field of views help iSimLoc to provide an initial guess, while narrower field of view perspectives provide rich local geometry features for accurate localization. iSimLoc matches hierarchically, which enables us to balance search efficiency and accuracy.
+ </figcaption>
 </figure>
 
-The following video is from the paper submitted to IROS 2022 (under review) that shows the general idea of the new controller design.
+## Publications
 
-Main contributions of this work includes:
-1. Proposing a dynamic control allocation method that allows the system to adapt to actuator failures. The proposed approach is light-weight and can be quickly extended on an already-existing flight control stack;
-2. Designing and modeling a tiltrotor VTOL with the ability to rotate each individual propeller; 
-3. Validating the system performance under the set of possible actuator failures in different flight phases;
-4. Providing the source code for the proposed strategies implemented on the PX4 flight controller firmware along with our simulation environment.
-
-For more detailed information about this work, please refer to the publication
-
-### Publications
-
-The general ideas on design and modeling of our custom tiltrotor VTOL and desing of the optimization based dynamic control allocation (so that the system can adapt to actuator failures) are described in the following publication (access on [arXiv](https://arxiv.org/abs/2205.05533)): 
-
-*BibTeX:* 
-
+*BibTeX:*
 ```
-@article{mousaei2022,
-author={Mohammadreza Mousaei and Junyi Geng and Azarakhsh Keipour and Dongwei Bai and Sebastian Scherer},
-booktitle={arXiv},
-title={Design, Modeling and Control for a Tilt-rotor VTOL UAV in the Presence of Actuator Failure}, 
-year={in press},
-link={https://arxiv.org/abs/2205.05533},
+@article{yin2022isimloc,
+  title={iSimLoc: Visual Global Localization for Previously Unseen Environments with Simulated Images},
+  author={Yin, Peng and Cisneros, Ivan and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal = {IEEE Transactions on Robotics, Conditional Accepted},
+  url = {https://arxiv.org/abs/2209.06376},
+  year={2022},
 }
 ```
-
-*IEEE Style:* 
-
-```
-M. Mousaei, J. Geng, A. Keipour, D. Bai, and S. Scherer, “Design, Modeling and Control for a Tilt-rotor VTOL UAV in the Presence of Actuator Failure,”, Under review. 
-```
-
-<br/>
-
 ### Contact
-
-Mohammadreza Mousaei (mmousaei [at] cs [dot] cmu [dot] edu)
-
-Junyi Geng - (junyigen [at] andrew [dot] cmu [dot] edu) 
-
-Azarakhsh Keipour - (keipour [at] cmu [dot] edu) 
-
-Dongwei Bai - (saeedb [at] andrew [dot] cmu [dot] edu) 
-
-Sebastian Scherer - (basti [at] cmu [dot] edu) 
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)

@@ -1,0 +1,346 @@
+% Encoding: UTF-8
+
+@article{yin2022bioslam,
+  title={BioSLAM: A Bio-inspired Lifelong Memory System for General Place Recognition},
+  author={Yin, Peng and Abuduweili, Abulikemu and Zhao, Shiqi and Liu, Changliu and Scherer, Sebastian},
+  journal = {IEEE Transactions on Robotics, Conditional Accepted},
+  url = {https://arxiv.org/abs/2208.14543},
+  video     = {https://youtu.be/PPOmyz2UVIw},
+  year={2022},
+  abstract={We present BioSLAM, a lifelong SLAM framework for learning various new appearances incrementally and maintaining accurate place recognition for previously visited areas. Unlike humans, artificial neural networks suffer from catastrophic forgetting and may forget the previously visited areas when trained with new arrivals. For humans, researchers discover that there exists a memory replay mechanism in the brain to keep the neuron active for previous events. Inspired by this discovery, BioSLAM designs a gated generative replay to control the robot's learning behavior based on the feedback rewards. Specifically, BioSLAM provides a novel dual-memory mechanism for maintenance: 1) a dynamic memory to efficiently learn new observations and 2) a static memory to balance new-old knowledge. When combined with a visual-/LiDAR- based SLAM system, the complete processing pipeline can help the agent incrementally update the place recognition ability, robust to the increasing complexity of long-term place recognition. We demonstrate BioSLAM in two incremental SLAM scenarios. In the first scenario, a LiDAR-based agent continuously travels through a city-scale environment with a 120km trajectory and encounters different types of 3D geometries (open streets, residential areas, commercial buildings). We show that BioSLAM can incrementally update the agent's place recognition ability and outperform the state-of-the-art incremental approach, Generative Replay, by 24%. In the second scenario, a LiDAR-vision-based agent repeatedly travels through a campus-scale area on a 4.5km trajectory. BioSLAM can guarantee the place recognition accuracy to outperform 15\% over the state-of-the-art approaches under different appearances. To our knowledge, BioSLAM is the first memory-enhanced lifelong SLAM system to help incremental place recognition in long-term navigation tasks.}
+}
+
+@article{yin2022isimloc,
+  title={iSimLoc: Visual Global Localization for Previously Unseen Environments with Simulated Images},
+  author={Yin, Peng and Cisneros, Ivan and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal = {IEEE Transactions on Robotics, Conditional Accepted},
+  url = {https://arxiv.org/abs/2208.14543},
+  year={2022},
+  abstract={The visual camera is an attractive device in beyond
+  visual line of sight (B-VLOS) drone operation, since they are
+  low in size, weight, power, and cost, and can provide redun-
+  dant modality to GPS failures. However, state-of-the-art visual
+  localization algorithms are unable to match visual data that
+  have a significantly different appearance due to illuminations or
+  viewpoints. This paper presents iSimLoc, a condition/viewpoint
+  consistent hierarchical global re-localization approach. The place
+  features of iSimLoc can be utilized to search target images
+  under changing appearances and viewpoints. Additionally, our
+  hierarchical global re-localization module refines in a coarse-to-
+  fine manner, allowing iSimLoc to perform a fast and accurate esti-
+  mation. We evaluate our method on one dataset with appearance
+  variations and one dataset that focuses on demonstrating large-
+  scale matching over a long flight in complicated environments. On
+  our two datasets, iSimLoc achieves 88.7% and 83.8% successful
+  retrieval rates with 1.5s inferencing time, compared to 45.8%
+  and 39.7% using the next best method. These results demonstrate
+  robust localization in a range of environments.}
+}
+
+
+@article{yin2022automerge,
+  title={Automerge: A framework for map assembling and smoothing in city-scale environments},
+  author={Yin, Peng and Lai, Haowen and Zhao, Shiqi and Fu, Ruijie and Cisneros, Ivan and Ge, Ruohai and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal = {IEEE Transactions on Robotics, Conditional Accepted},
+  url = {https://arxiv.org/abs/2207.06965},
+  video     = {https://youtu.be/6sCWeDmQITQ},
+  year={2022},
+  abstract={We present AutoMerge, a LiDAR data processing framework for assembling a large number of map segments into a complete map. Traditional large-scale map merging methods are fragile to incorrect data associations, and are primarily limited to working only offline. AutoMerge utilizes multi-perspective fusion and adaptive loop closure detection for accurate data associations, and it uses incremental merging to assemble large maps from individual trajectory segments given in random order and with no initial estimations. Furthermore, after assembling the segments, AutoMerge performs fine matching and pose-graph optimization to globally smooth the merged map. We demonstrate AutoMerge on both city-scale merging (120km) and campus-scale repeated merging (4.5km x 8). The experiments show that AutoMerge (i) surpasses the second- and third- best methods by 14% and 24% recall in segment retrieval, (ii) achieves comparable 3D mapping accuracy for 120 km large-scale map assembly, (iii) and it is robust to temporally-spaced revisits. To the best of our knowledge, AutoMerge is the first mapping approach that can merge hundreds of kilometers of individual segments without the aid of GPS.}
+}
+
+@article{yin2022GPR,
+  title={General Place Recognition Survey: Towards the Real-world Autonomy Age},
+  author={Yin, Peng and Zhao, Shiqi and Cisneros, Ivan and Abuduweili, Abulikemu and Huang, Guoquan and Milford, Micheal and Liu, Changliu and Choset, Howie and Scherer, Sebastian},
+  journal = {arXiv preprint},
+  url = {https://arxiv.org/abs/2209.04497},
+  year={2022},
+  abstract={Place recognition is the fundamental module that
+  can assist Simultaneous Localization and Mapping (SLAM) in
+  loop-closure detection and re-localization for long-term navigation. The place recognition community has made astonishing
+  progress over the last 20 years, and this has attracted widespread
+  research interest and application in multiple fields such as
+  computer vision and robotics. However, few methods have shown
+  promising place recognition performance in complex real-world
+  scenarios, where long-term and large-scale appearance changes
+  usually result in failures. Additionally, there is a lack of an
+  integrated framework amongst the state-of-the-art methods that
+  can handle all of the challenges in place recognition, which
+  include appearance changes, viewpoint differences, robustness
+  to unknown areas, and efficiency in real-world applications. In
+  this work, we survey the state-of-the-art methods that target longterm localization and discuss future directions and opportunities.
+  We start by investigating the formulation of place recognition
+  in long-term autonomy and the major challenges in real-world environments. We then review the recent works in place recognition
+  for different sensor modalities and current strategies for dealing
+  with various place recognition challenges. Finally, we review
+  the existing datasets for long-term localization and introduce
+  our datasets and evaluation API for different approaches. This
+  paper can be a tutorial for researchers new to the place
+  recognition community and those who care about long-term
+  robotics autonomy. We also provide our opinion on the frequently
+  asked question in robotics: Do robots need accurate localization
+  for long-term autonomy? A summary of this work, as well as our
+  datasets and evaluation API are publicly available to the robotics
+  community at: https://github.com/MetaSLAM/GPRS.}
+}
+
+@article{cisneros2022alto,
+  title={ALTO: A Large-Scale Dataset for UAV Visual Place Recognition and Localization},
+  author={Cisneros, Ivan and Yin, Peng and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2207.12317},
+  year={2022},
+  abstract={We present the ALTO dataset, a vision-focused dataset for the development and benchmarking of Visual Place Recognition and Localization methods for Unmanned Aerial Vehicles. The dataset is composed of two long (approximately 150km and 260km) trajectories flown by a helicopter over Ohio and Pennsylvania, and it includes high precision GPS-INS ground truth location data, high precision accelerometer readings, laser altimeter readings, and RGB downward facing camera imagery. In addition, we provide reference imagery over the flight paths, which makes this dataset suitable for VPR benchmarking and other tasks common in Localization, such as image registration and visual odometry. To the author's knowledge, this is the largest real-world aerial-vehicle dataset of this kind.},
+  url={https://github.com/MetaSLAM/ALTO}
+}
+
+@article{yin2022alita,
+  title={ALITA: A Large-scale Incremental Dataset for Long-term Autonomy},
+  author={Yin, Peng and Zhao, Shiqi and Ge, Ruohai and Cisneros, Ivan and Fu, Ruijie and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2205.10737},
+  year={2022},
+  abstract={For long-term autonomy, most place recognition methods are mainly evaluated on simplified scenarios or simulated datasets, which cannot provide solid evidence to evaluate the readiness for current Simultaneous Localization and Mapping (SLAM). In this paper, we present a long-term place recognition dataset for use in mobile localization under large-scale dynamic environments. This dataset includes a campus-scale track and a city-scale track: 1) the campus-track focuses the long-term property, we record LiDAR device and an omnidirectional camera on 10 trajectories, and each trajectory are repeatly recorded 8 times under variant illumination conditions. 2) the city-track focuses the large-scale property, we mount the LiDAR device on the vehicle and traversing through a 120km trajectories, which contains open streets, residential areas, natural terrains, etc. They includes 200 hours of raw data of all kinds scenarios within urban environments. The ground truth position for both tracks are provided on each trajectory, which is obtained from the Global Position System with an additional General ICP based point cloud refinement. To simplify the evaluation procedure, we also provide the Python-API with a set of place recognition metrics is proposed to quickly load our dataset and evaluate the recognition performance against different methods. This dataset targets at finding methods with high place recognition accuracy and robustness, and providing real robotic system with long-term autonomy.},
+  url={https://github.com/MetaSLAM/ALITA}
+}
+
+@article{zhao2022spherevlad++,
+  title={SphereVLAD++: Attention-based and Signal-enhanced Viewpoint Invariant Descriptor},
+  author={Zhao, Shiqi and Yin, Peng and Yi, Ge and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2207.02958},
+  year={2022},
+  abstract={LiDAR-based localization approach is a fundamental module for large-scale navigation tasks, such as last-mile delivery and autonomous driving, and localization robustness highly relies on viewpoints and 3D feature extraction. Our previous work provides a viewpoint-invariant descriptor to deal with viewpoint differences; however, the global descriptor suffers from a low signal-noise ratio in unsupervised clustering, reducing the distinguishable feature extraction ability. We develop SphereVLAD++, an attention-enhanced viewpoint invariant place recognition method in this work. SphereVLAD++ projects the point cloud on the spherical perspective for each unique area and captures the contextual connections between local features and their dependencies with global 3D geometry distribution. In return, clustered elements within the global descriptor are conditioned on local and global geometries and support the original viewpoint-invariant property of SphereVLAD. In the experiments, we evaluated the localization performance of SphereVLAD++ on both public KITTI360 datasets and self-generated datasets from the city of Pittsburgh. The experiment results show that SphereVLAD++ outperforms all relative state-of-the-art 3D place recognition methods under small or even totally reversed viewpoint differences and shows 0.69% and 15.81% successful retrieval rates with better than the second best. Low computation requirements and high time efficiency also help its application for low-cost robots.}
+}
+
+
+@inproceedings{feng2022advancing,
+  title={Advancing self-supervised monocular depth learning with sparse liDAR},
+  author={Feng, Ziyue and Jing, Longlong and Yin, Peng and Tian, Yingli and Li, Bing},
+  booktitle={Conference on Robot Learning},
+  pages={685--694},
+  year={2022},
+  abstract={Self-supervised monocular depth prediction provides a cost-effective solution to obtain the 3D location of each pixel. However, the existing approaches usually lead to unsatisfactory accuracy, which is critical for autonomous robots. In this paper, we propose FusionDepth, a novel two-stage network to advance the self-supervised monocular dense depth learning by leveraging low-cost sparse (e.g. 4-beam) LiDAR. Unlike the existing methods that use sparse LiDAR mainly in a manner of time-consuming iterative post-processing, our model fuses monocular image features and sparse LiDAR features to predict initial depth maps. Then, an efficient feed-forward refine network is further designed to correct the errors in these initial depth maps in pseudo-3D space with real-time performance. Extensive experiments show that our proposed model significantly outperforms all the state-of-the-art self-supervised methods, as well as the sparse-LiDAR-based methods on both self-supervised monocular depth prediction and completion tasks. With the accurate dense depth prediction, our model outperforms the state-of-the-art sparse-LiDAR-based method (Pseudo-LiDAR++) by more than 68% for the downstream task monocular 3D object detection on the KITTI Leaderboard.},
+  organization={PMLR}
+}
+
+
+
+@article{lai2021adafusion,
+  title={AdaFusion: Visual-LiDAR Fusion with Adaptive Weights for Place Recognition},
+  author={Lai, Haowen and Yin, Peng and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2111.11739},
+  year={2021},
+  abstract={Recent years have witnessed the increasing application of place recognition in various environments, such as city roads, large buildings, and a mix of indoor and outdoor places. This task, however, still remains challenging due to the limitations of different sensors and the changing appearance of environments. Current works only consider the use of individual sensors, or simply combine different sensors, ignoring the fact that the importance of different sensors varies as the environment changes. In this paper, an adaptive weighting visual-LiDAR fusion method, named AdaFusion, is proposed to learn the weights for both images and point cloud features. Features of these two modalities are thus contributed differently according to the current environmental situation. The learning of weights is achieved by the attention branch of the network, which is then fused with the multi-modality feature extraction branch. Furthermore, to better utilize the potential relationship between images and point clouds, we design a twostage fusion approach to combine the 2D and 3D attention. Our work is tested on two public datasets, and experiments show that the adaptive weights help improve recognition accuracy and system robustness to varying environments.},
+}
+
+
+@InProceedings{Yin:RAL2021_1,
+  author = {Peng Yin and Lingyun Xu and Jianmin Ji and Sebastian Scherer and Howie Choset},
+  title = {3D Segmentation Learning from Sparse Annotations and Hierarchical Descriptors},
+  journal = {IEEE Robotics and Automation Letters},
+  year = {2021},
+  month = {July},
+  volume = {6},
+  number = {3},
+  pages = {5953 - 5960},
+  keywords = {3D Segmentation, Sparse Annotation},
+  url = {https://www.ri.cmu.edu/wp-content/uploads/2021/06/RAL_SparseSeg.pdf},
+  video     = {https://youtu.be/jxt91vx0cns},
+  abstract  = {One of the main obstacles to 3D semantic segmentation is the significant amount of endeavor required to generate expensive point-wise annotations for fully supervised training.
+  To alleviate manual efforts, we propose GIDSeg, a novel approach that can simultaneously learn segmentation from sparse annotations via reasoning global-regional structures and individual-vicinal properties.
+  GIDSeg depicts global- and individual- relation via a dynamic edge convolution network coupled with a kernelized identity descriptor.
+  The ensemble effects are obtained by endowing a fine-grained receptive field to a low-resolution voxelized map.
+  In our GIDSeg, an adversarial learning module is also designed to further enhance the conditional constraint of identity descriptors within the joint feature distribution.
+  Despite the apparent simplicity, our proposed approach achieves superior performance over state-of-the-art for inferencing 3D dense segmentation with only sparse annotations.
+  Particularly, with 5% annotations of raw data, GIDSeg outperforms other 3D segmentation methods.}
+}
+
+
+@InProceedings{Yin:RSS2021,
+  author = {Peng Yin and Lingyun Xu and Ji Zhang and Howie Choset and Sebastian Scherer},
+  title = {i3dLoc: Image-to-range Cross-domain Localization Robust to Inconsistent Environmental Conditions},
+  booktitle = {Proceedings of Robotics: Science and Systems (RSS '21)},
+  year = {2021},
+  month = {July},
+  publisher = {Robotics: Science and Systems 2021},
+  keywords = {Visual SLAM, Place Recognition, Condition Invariant, Viewpoint Invariant},
+  url = {https://arxiv.org/abs/2105.12883},
+  video     = {https://www.youtube.com/watch?v=ta1_CeJV5nI},
+  abstract  = {We present a method for localizing a single camera with respect to a point cloud map in indoor and outdoor scenes.
+  The problem is challenging because correspondences of local invariant features are inconsistent across the domains between image and 3D.
+  The problem is even more challenging as the method must handle various environmental conditions such as illumination, weather, and seasonal changes.
+  Our method can match equirectangular images to the 3D range projections by extracting cross-domain symmetric place descriptors.
+  Our key insight is to retain condition-invariant 3D geometry features from limited data samples while eliminating the condition-related features by a designed Generative Adversarial Network.
+  Based on such features, we further design a spherical convolution network to learn viewpoint-invariant symmetric place descriptors.
+  We evaluate our method on extensive self-collected datasets, which involve \textit{Long-term} (variant appearance conditions), \textit{Large-scale} (up to 2km structure/unstructured environment), and \textit{Multistory} (four-floor confined space).
+  Our method surpasses other current state-of-the-arts by achieving around 3 times higher place retrievals to inconsistent environments, and above 3 times accuracy on online localization.
+  To highlight our method's generalization capabilities, we also evaluate the recognition across different datasets. With a single trained model, i3dLoc can demonstrate reliable visual localization in random conditions.}
+}
+
+@ARTICLE{9523568,
+  author={Yin, Peng and Xu, Lingyun and Feng, Ziyue and Egorov, Anton and Li, Bing},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={PSE-Match: A Viewpoint-Free Place Recognition Method With Parallel Semantic Embedding}, 
+  year={2022},
+  volume={23},
+  number={8},
+  pages={11249-11260},
+  abstract={Accurate localization on autonomous driving cars is essential for autonomy and driving safety, especially for complex urban streets and search-and-rescue subterranean environments where high-accurate GPS is not available. However current odometry estimation may introduce the drifting problems in long-term navigation without robust global localization. The main challenges involve scene divergence under the interference of dynamic environments and effective perception of observation and object layout variance from different viewpoints. To tackle these challenges, we present PSE-Match, a viewpoint-free place recognition method based on parallel semantic analysis of isolated semantic attributes from 3D point-cloud models. Compared with the original point cloud, the observed variance of semantic attributes is smaller. PSE-Match incorporates a divergence place learning network to capture different semantic attributes parallelly through the spherical harmonics domain. Using both existing benchmark datasets and two in-field collected datasets, our experiments show that the proposed method achieves above 70% average recall with top one retrieval and above 95% average recall with top ten retrieval cases. And PSE-Match has also demonstrated an obvious generalization ability with a limited training dataset.},
+  doi={10.1109/TITS.2021.3102429}}
+
+@ARTICLE{9454396,
+  author={Yin, Peng and Xu, Lingyun and Ji, Jianmin and Scherer, Sebastian and Choset, Howie},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={3D Segmentation Learning From Sparse Annotations and Hierarchical Descriptors}, 
+  year={2021},
+  volume={6},
+  number={3},
+  pages={5953-5960},
+  doi={10.1109/LRA.2021.3088796}}
+
+@ARTICLE{9361316,
+  author={Yin, Peng and Xu, Lingyun and Zhang, Ji and Choset, Howie},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={FusionVLAD: A Multi-View Deep Fusion Networks for Viewpoint-Free 3D Place Recognition}, 
+  year={2021},
+  volume={6},
+  number={2},
+  pages={2304-2310},
+  doi={10.1109/LRA.2021.3061375}}
+
+@ARTICLE{9351776,
+  author={Yin, Peng and Wang, Fuying and Egorov, Anton and Hou, Jiafan and Jia, Zhenzhong and Han, Jianda},
+  journal={IEEE Transactions on Industrial Electronics}, 
+  title={Fast Sequence-Matching Enhanced Viewpoint-Invariant 3-D Place Recognition}, 
+  year={2022},
+  volume={69},
+  number={2},
+  pages={2127-2135},
+  abstract={Recognizing the same place undervariant viewpoint differences is the fundamental capability for human beings and animals. However, such a strong place recognition ability in robotics is still an unsolved problem. Extracting local invariant descriptors from the same place under various viewpoint differences is difficult. This article seeks to provide robots with a human-like place recognition ability using a new 3-D feature learning method. This article proposes a novel lightweight 3-D place recognition and fast sequence matching to achieve robust 3-D place recognition, capable of recognizing places from a previous trajectory regardless of viewpoints and temporary observation differences. Specifically, we extracted the viewpoint-invariant place feature from 2-D spherical perspectives by leveraging spherical harmonics’ orientation-equivalent property. To improve sequence-matching efficiency, we designed a coarse-to-fine fast sequence-matching mechanism to balance the matching efficiency and accuracy. Despite the apparent simplicity, our proposed approach outperforms the relative state of the art. In both public and self-gathered datasets with orientation/translation differences or noise observations, our method can achieve above 95% average recall for the best match with only 18% inference time of PointNet-based place recognition methods.},
+  doi={10.1109/TIE.2021.3057025}}
+
+@INPROCEEDINGS{9341249,
+  author={Wei, Huanshu and Qiao, Zhijian and Liu, Zhe and Suo, Chuanzhe and Yin, Peng and Shen, Yueling and Li, Haoang and Wang, Hesheng},
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={End-to-End 3D Point Cloud Learning for Registration Task Using Virtual Correspondences}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={2678-2683},
+  abstract={3D Point cloud registration is still a very challenging topic due to the difficulty in finding the rigid transformation between two point clouds with partial correspondences, and it's even harder in the absence of any initial estimation information. In this paper, we present an end-to-end deep-learning based approach to resolve the point cloud registration problem. Firstly, the revised LPD-Net is introduced to extract features and aggregate them with the graph network. Secondly, the self-attention mechanism is utilized to enhance the structure information in the point cloud and the cross-attention mechanism is designed to enhance the corresponding information between the two input point clouds. Based on which, the virtual corresponding points can be generated by a soft pointer based method, and finally, the point cloud registration problem can be solved by implementing the SVD method. Comparison results in ModelNet40 dataset validate that the proposed approach reaches the state-of-the-art in point cloud registration tasks and experiment resutls in KITTI dataset validate the effectiveness of the proposed approach in real applications.},
+  doi={10.1109/IROS45743.2020.9341249}}
+
+@INPROCEEDINGS{9341727,
+  author={Yin, Peng and Wang, Fuying and Egorov, Anton and Hou, Jiafan and Zhang, Ji and Choset, Howie},
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={SeqSphereVLAD: Sequence Matching Enhanced Orientation-invariant Place Recognition}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={5024-5029},
+  abstract={Human beings and animals are capable of recognizing places from a previous journey when viewing them under different environmental conditions (e.g., illuminations and weathers). This paper seeks to provide robots with a human-like place recognition ability using a new point cloud feature learning method. This is a challenging problem due to the difficulty of extracting invariant local descriptors from the same place under various orientation differences and dynamic obstacles. In this paper, we propose a novel lightweight 3D place recognition method, SeqSphereVLAD, which is capable of recognizing places from a previous trajectory regardless of the viewpoint and the temporary observation differences. The major contributions of our method lie in two modules: (1) the spherical convolution feature extraction module, which produces orientation-invariant local place descriptors, and (2) the coarse-to-fine sequence matching module, which ensures both accurate loop-closure detection and real-time performance. Despite the apparent simplicity, our proposed approach outperform the state-of-the-arts for place recognition under datasets that combine orientation and context differences. Compared with the arts, our method can achieve above 95% average recall for the best match with only 18% inference time of PointNet-based place recognition methods.},
+  doi={10.1109/IROS45743.2020.9341727}}
+
+@article{yin2019fusionmapping,
+  title={Fusionmapping: Learning depth prediction with monocular images and 2d laser scans},
+  author={Yin, Peng and Qian, Jianing and Cao, Yibo and Held, David and Choset, Howie},
+  journal={arXiv preprint arXiv:1912.00096},
+  abstract={Acquiring accurate three-dimensional depth information conventionally requires expensive multibeam LiDAR devices. Recently, researchers have developed a less expensive option by predicting depth information from two-dimensional color imagery. However, there still exists a substantial gap in accuracy between depth information estimated from two-dimensional images and real LiDAR point-cloud. In this paper, we introduce a fusion-based depth prediction method, called FusionMapping. This is the first method that fuses colored imagery and two-dimensional laser scan to estimate depth in-formation. More specifically, we propose an autoencoder-based depth prediction network and a novel point-cloud refinement network for depth estimation. We analyze the performance of our FusionMapping approach on the KITTI LiDAR odometry dataset and an indoor mobile robot system. The results show that our introduced approach estimates depth with better accuracy when compared to existing methods.},
+  year={2019}
+}
+
+@ARTICLE{9667394,
+  author={Abah, Colette and Orekhov, Andrew L. and Johnston, Garrison L. H. and Simaan, Nabil},
+  journal={IEEE Sensors Journal}, 
+  title={A Multi-Modal Sensor Array for Human–Robot Interaction and Confined Spaces Exploration Using Continuum Robots}, 
+  year={2022},
+  volume={22},
+  number={4},
+  pages={3585-3594},
+  abstract={Safe human-robot interaction requires robots endowed with perception. This paper presents the design of a multi-modal sensory array for continuum robots, targeting operation in semi-structured confined spaces with human users. Active safety measures are enabled via sensory arrays capable of simultaneous sensing of proximity, contact, and force. Proximity sensing is achieved using time-of-flight sensors, while contact force is sensed using Hall effect sensors and embedded magnets. The paper presents the design and fabrication of these sensors, the communication protocol and multiplexing scheme used to allow an interactive rate of communication with a high-level controller, and an evaluation of these sensors for actively mapping the shape of the environment and compliance control using gestures and contact with the robot. Characterization of the proximity sensors is presented with considerations of sensitivity to lighting, color, and texture conditions. Also, characterization of the force sensing is presented. The results show that the multi-modal sensory array can enable pre and post-collision active safety measures and can also enable user interaction with the robot. We believe this new technology allows for increased safety for human-robot interaction in confined and semi-structures spaces due to its demonstrated capabilities of detecting impending collision and mapping the environment along the length of the robot. Future miniaturization of the electronics will also allow possible integration in smaller continuum and soft robots.},
+  doi={10.1109/JSEN.2021.3140002}}
+
+@INPROCEEDINGS{8793853,
+  author={Yin, Peng and Srivatsan, Rangaprasad Arun and Chen, Yin and Li, Xueqian and Zhang, Hongda and Xu, Lingyun and Li, Lu and Jia, Zhenzhong and Ji, Jianmin and He, Yuqing},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)}, 
+  title={MRS-VPR: a multi-resolution sampling based global visual place recognition method}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={7137-7142},
+  abstract={Place recognition and loop closure detection are challenging for long-term visual navigation tasks. SeqSLAM is considered to be one of the most successful approaches to achieve long-term localization under varying environmental conditions and changing viewpoints. SeqSLAM uses a brute-force sequential matching method, which is computationally intensive. In this work, we introduce a multi-resolution sampling-based global visual place recognition method (MRS-VPR), which can significantly improve the matching efficiency and accuracy in sequential matching. The novelty of this method lies in the coarse-to-fine searching pipeline and a particle filter-based global sampling scheme, that can balance the matching efficiency and accuracy in the long-term navigation task. Moreover, our model works much better than SeqSLAM when the testing sequence is over a much smaller time scale than the reference sequence. Our experiments demonstrate that MRSVPR is efficient in locating short temporary trajectories within long-term reference ones without compromising on the accuracy compared to SeqSLAM.},
+  doi={10.1109/ICRA.2019.8793853}}
+
+@INPROCEEDINGS{8793752,
+  author={Yin, Peng and Xu, Lingyun and Li, Xueqian and Yin, Chen and Li, Yingli and Srivatsan, Rangaprasad Arun and Li, Lu and Ji, Jianmin and He, Yuqing},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)}, 
+  title={A Multi-Domain Feature Learning Method for Visual Place Recognition}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={319-324},
+  abstract={Visual Place Recognition (VPR) is an important component in both computer vision and robotics applications, thanks to its ability to determine whether a place has been visited and where specifically. A major challenge in VPR is to handle changes of environmental conditions including weather, season and illumination. Most VPR methods try to improve the place recognition performance by ignoring the environmental factors, leading to decreased accuracy decreases when environmental conditions change significantly, such as day versus night. To this end, we propose an end-to-end conditional visual place recognition method. Specifically, we introduce the multi-domain feature learning method (MDFL) to capture multiple attribute-descriptions for a given place, and then use a feature detaching module to separate the environmental condition-related features from those that are not. The only label required within this feature learning pipeline is the environmental condition. Evaluation of the proposed method is conducted on the multi-season \textit{NORDLAND} dataset, and the multi-weather \textit{GTAV} dataset. Experimental results show that our method improves the feature robustness against variant environmental conditions.},
+  doi={10.1109/ICRA.2019.8793752}}
+
+@INPROCEEDINGS{Yin:ACC2018,  
+author={Yin, Peng and He, Yuqing and Xu, Lingyun and Peng, Yan and Han, Jianda and Xu, Weiliang},  
+booktitle={2018 Annual American Control Conference (ACC)},   
+title={Synchronous Adversarial Feature Learning for LiDAR based Loop Closure Detection},   
+year={2018},  
+volume={},  
+number={},  
+pages={234-239},  
+abstract={Loop C losure Detection (LCD) is the essential module in the simultaneous localization and mapping (SLAM) task. In the current appearance-based SLAM methods, the visual inputs are usually affected by illumination, appearance and viewpoints changes. Comparing to the visual inputs, with the active property, light detection and ranging (LiDAR) based point-cloud inputs are invariant to the illumination and appearance changes. In this paper, we extract 3D voxel maps and 2D top view maps from LiDAR inputs, and the former could capture the local geometry into a simplified 3D voxel format, the later could capture the local road structure into a 2D image format. However, the most challenge problem is to obtain efficient features from 3D and 2D maps to against the viewpoints difference. In this paper, we proposed a synchronous adversarial feature learning method for the LCD task, which could learn the higher level abstract features from different domains without any label data. To the best of our knowledge, this work is the first to extract multi-domain adversarial features for the LCD task in real time. To investigate the performance, we test the proposed method on the KITTI odometry dataset. The extensive experiments results show that, the proposed method could largely improve LCD accuracy even under huge viewpoints differences.},
+doi={10.23919/ACC.2018.8431776}
+}
+
+
+
+@INPROCEEDINGS{9009029,
+  author={Liu, Zhe and Zhou, Shunbo and Suo, Chuanzhe and Yin, Peng and Chen, Wen and Wang, Hesheng and Li, Haoang and Liu, Yunhui},
+  booktitle={2019 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+  title={LPD-Net: 3D Point Cloud Learning for Large-Scale Place Recognition and Environment Analysis}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={2831-2840},
+  abstract={Point cloud based place recognition is still an open issue due to the difficulty in extracting local features from the raw 3D point cloud and generating the global descriptor, and it's even harder in the large-scale dynamic environments. In this paper, we develop a novel deep neural network, named LPD-Net (Large-scale Place Description Network), which can extract discriminative and generalizable global descriptors from the raw 3D point cloud. Two modules, the adaptive local feature extraction module and the graph-based neighborhood aggregation module, are proposed, which contribute to extract the local structures and reveal the spatial distribution of local features in the large-scale point cloud, with an end-to-end manner. We implement the proposed global descriptor in solving point cloud based retrieval tasks to achieve the large-scale place recognition. Comparison results show that our LPD-Net is much better than PointNetVLAD and reaches the state-of-the-art. We also compare our LPD-Net with the vision-based solutions to show the robustness of our approach to different weather and light conditions.},
+  doi={10.1109/ICCV.2019.00292}}
+
+@INPROCEEDINGS{8593562,
+  author={Yin, Peng and Xu, Lingyun and Liu, Zhe and Li, Lu and Salman, Hadi and He, Yuqing and Xu, Weiliang and Wang, Hesheng and Choset, Howie},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Stabilize an Unsupervised Feature Learning for LiDAR-based Place Recognition}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1162-1167},
+  ABSTRACT = {Place recognition is one of the major challenges for the LiDAR-based effective localization and mapping task. Traditional methods are usually relying on geometry matching to achieve place recognition, where a global geometry map need to be restored. In this paper, we accomplish the place recognition task based on an end-to-end feature learning framework with the LiDAR inputs. This method consists of two core modules, a dynamic octree mapping module that generates local 2D maps with the consideration of the robot's motion; and an unsupervised place feature learning module which is an improved adversarial feature learning network with additional assistance for the long-term place recognition requirement. More specially, in place feature learning, we present an additional Generative Adversarial Network with a designed Conditional Entropy Reduction module to stabilize the feature learning process in an unsupervised manner. We evaluate the proposed method on the Kitti dataset and North Campus Long-Term LiDAR dataset. Experimental results show that the proposed method outperforms state-of-the-art in place recognition tasks under long-term applications. What's more, the feature size and inference efficiency in the proposed method are applicable in real-time performance on practical robotic platforms.},
+  doi={10.1109/IROS.2018.8593562}}
+
+
+@Article{Han:Sensor2016,
+AUTHOR = {Han, Jianda and Yin, Peng and He, Yuqing and Gu, Feng},
+TITLE = {Enhanced ICP for the Registration of Large-Scale 3D Environment Models: An Experimental Study},
+JOURNAL = {Sensors},
+VOLUME = {16},
+YEAR = {2016},
+NUMBER = {2},
+ARTICLE-NUMBER = {228},
+URL = {https://www.mdpi.com/1424-8220/16/2/228},
+ISSN = {1424-8220},
+ABSTRACT = {One of the main applications of mobile robots is the large-scale perception of the outdoor environment. One of the main challenges of this application is fusing environmental data obtained by multiple robots, especially heterogeneous robots. This paper proposes an enhanced iterative closest point (ICP) method for the fast and accurate registration of 3D environmental models. First, a hierarchical searching scheme is combined with the octree-based ICP algorithm. Second, an early-warning mechanism is used to perceive the local minimum problem. Third, a heuristic escape scheme based on sampled potential transformation vectors is used to avoid local minima and achieve optimal registration. Experiments involving one unmanned aerial vehicle and one unmanned surface vehicle were conducted to verify the proposed technique. The experimental results were compared with those of normal ICP registration algorithms to demonstrate the superior performance of the proposed method.},
+DOI = {10.3390/s16020228}
+}
+
+
+
+
+@INPROCEEDINGS{Yin:ROBIO2015,
+  author={Yin, Peng and He, Yuqing and Gu, Feng and Han, Jianda},
+  booktitle={2015 IEEE International Conference on Robotics and Biomimetics (ROBIO)}, 
+  title={Multi-relation octomap based Heuristic ICP for air/surface robots cooperation}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={1524-1529},
+  doi={10.1109/ROBIO.2015.7418987}}
+
+@Comment{jabref-meta: databaseType:bibtex;}

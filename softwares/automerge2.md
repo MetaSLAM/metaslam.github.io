@@ -7,53 +7,37 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: /img/web.gif
+hero_image: /img/posts/automerge2/automerge2.gif
 ---
+## Background and Major Contributions
 
-## Creating A Showcase Datafile
+The visual camera is an attractive device in beyond visual line of sight (B-VLOS) drone operation, since they are low in size, weight, power, and cost, and can provide redundant modality to GPS failures. However, state-of-the-art visual localization algorithms are unable to match visual data that have a significantly different appearance due to illuminations or viewpoints. This paper presents iSimLoc, a condition/viewpoint consistent hierarchical global re-localization approach. The place features of iSimLoc can be utilized to search target images under changing appearances and viewpoints. Additionally, our hierarchical global re-localization module refines in a coarse-to-fine manner, allowing iSimLoc to perform a fast and accurate estimation. We evaluate our method on one dataset with appearance variations and one dataset that focuses on demonstrating large-scale matching over a long flight in complicated environments. On our two datasets, iSimLoc achieves 88.7% and 83.8% successful retrieval rates with 1.5s inferencing time, compared to 45.8% and 39.7% using the next best method. These results demonstrate robust localization in a range of environments.
 
-Create a datafile in your sites `_data` directory in the following format. Subtitle, features and tags are not required.
+The major contributions of iSimLoc include:
 
-The description text accepts markdown and is run through the markdownify filter on the page.
+* **We developped a novel long-term (variant illumiations) and large-scale (150km) UAV navigation method.**
+* **The proposed method can achieve accurate  without been there .**
+* **The proposed method only requires 5~10% original data for model training**
+* **The proposed method can provide large-scale re-localization under challenge terrains.**
 
-The image_ratio will default to is-16by9 if it is not defined and accepts the [Bulma image](https://bulma.io/documentation/elements/image/) classes.
+<figure>
+ <img src="/img/posts/isimloc/framework.png" style="width:100%" />
+ <figcaption>
+For high and low altitudes, iSimLoc extracts a condition-(illumination) and viewpoint-invariant place descriptor. Only the descriptor needs to be stored and matched. Larger field of views help iSimLoc to provide an initial guess, while narrower field of view perspectives provide rich local geometry features for accurate localization. iSimLoc matches hierarchically, which enables us to balance search efficiency and accuracy.
+ </figcaption>
+</figure>
 
-To display GitHub Stars, Forks and Watchers badges add your GitHub user and repo name to the github setting, such as `chrisrhymes/bulma-clean-theme`
+## Publications
 
-To change the default styles of the features, set `features_styles`. This uses the styles from [bulma-block-list](https://www.csrhymes.com/bulma-block-list/) npm package.
-
-```yaml
-intro: |-
-  This is some introduction text for the showcases.
-  
-  ## Example Heading
-  It can convert markdown format
-
-items:
-  - title: Example showcase item
-    subtitle: Example subtitle
-    description: |-
-      This is the example description for this item that you are showcasing and has an image, title, description, tags and a link.
-    features:
-      - This is a feature
-      - This is a feature
-    features_styles: is-centered is-outlined is-primary
-    image: https://via.placeholder.com/1024x788
-    image_ratio: is-16by9
-    link: http://www.example.com
-    link_text: View example
-    tags: PHP,CSS,JavaScript
-    github: user/repo-name
+*BibTeX:*
 ```
-
-## Displaying the Showcase
-
-Set the showcase in the page's front matter to be the name of the showcase data file without the extension. This gives you the ability to create multiple showcases to be used on different pages.
-
-```yaml
-title: Showcase
-subtitle: An example showcase page
-layout: page
-showcase: showcase_example
-show_sidebar: false
+@article{yin2022isimloc,
+  title={iSimLoc: Visual Global Localization for Previously Unseen Environments with Simulated Images},
+  author={Yin, Peng and Cisneros, Ivan and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal = {IEEE Transactions on Robotics, Conditional Accepted},
+  url = {https://arxiv.org/abs/2209.06376},
+  year={2022},
+}
 ```
+### Contact
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)

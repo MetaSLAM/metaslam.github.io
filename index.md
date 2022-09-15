@@ -20,7 +20,8 @@ hero_link_text: Playground
 
 # About MetaSLAM
 
-MetaSLAM is a collective intelligence framework for multi-agent systems under large-scale and long-term opeartion, which includes the current cutting-edge **localization**, **mapping**, **exploration** approaches. MetaSLAM is also a joint organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries for real-world robotic applications.
+MetaSLAM is a collective intelligence framework for multi-agent systems under large-scale and long-term opeartion, which includes the current cutting-edge **localization**, **mapping**, **exploration** approaches.
+ <!-- MetaSLAM is also a joint organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries for real-world robotic applications. -->
 <!-- We are combined with the top-researchers abround the world, [Carnegie Mellon University](https://www.cmu.edu/),  -->
 
 ## Our Mission
