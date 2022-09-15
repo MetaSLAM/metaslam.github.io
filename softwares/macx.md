@@ -1,7 +1,7 @@
 ---
-title: Showcase
-subtitle: An example showcase page
-description: An example showcase page to help you easily display your work
+title: MACX
+subtitle: Multi-Agent Cooperative Exploration with Unknown Initial Position
+description: Multi-Agent Cooperative Exploration with Unknown Initial Position
 layout: page
 # showcase: showcase_example
 show_sidebar: false
@@ -11,19 +11,20 @@ hero_image: /img/posts/macx/macx.gif
 ---
 ## Background and Major Contributions
 
-The visual camera is an attractive device in beyond visual line of sight (B-VLOS) drone operation, since they are low in size, weight, power, and cost, and can provide redundant modality to GPS failures. However, state-of-the-art visual localization algorithms are unable to match visual data that have a significantly different appearance due to illuminations or viewpoints. This paper presents iSimLoc, a condition/viewpoint consistent hierarchical global re-localization approach. The place features of iSimLoc can be utilized to search target images under changing appearances and viewpoints. Additionally, our hierarchical global re-localization module refines in a coarse-to-fine manner, allowing iSimLoc to perform a fast and accurate estimation. We evaluate our method on one dataset with appearance variations and one dataset that focuses on demonstrating large-scale matching over a long flight in complicated environments. On our two datasets, iSimLoc achieves 88.7% and 83.8% successful retrieval rates with 1.5s inferencing time, compared to 45.8% and 39.7% using the next best method. These results demonstrate robust localization in a range of environments.
+Multi-agent exploration of a bounded 3D environment with unknown initial positions of agents is a challenging problem. It requires quickly exploring the environments as well as robustly merging the sub-maps built by each agent. We take the view that the existing approaches are either aggressive or conservative: Aggressive strategies directly merge sub-maps when there seems to be overlap between two sub-maps, which can lead to incorrect merging due to the false-positive detection of overlap and is thus not robust. Conservative strategies direct one agent to revisit excessive amount of the history trajectory of another agent for verification before merging, which can lower the exploration efficiency due to the repeated exploration of the same area. To intelligently balance the robustness of sub-map merging and exploration efficiency, we develop a new approach for lidar-based multi-agent exploration, which can direct one agent to repeat another agent's trajectory in an adaptive manner based on the quality indicator of the sub-map merging process. Additionally, our approach extends the recent single-agent hierarchical exploration strategy to multiple agents in a cooperative manner by planning for agents with merged sub-maps together to further improve the exploration efficiency. Our numerical results show that our approach is xxx more efficient than the baselines on average while maintaining the robustness of sub-map merging.
 
-The major contributions of iSimLoc include:
+The major contributions of MACX include:
 
-* **We developped a novel long-term (variant illumiations) and large-scale (150km) UAV navigation method.**
-* **The proposed method can achieve accurate  without been there .**
-* **The proposed method only requires 5~10% original data for model training**
-* **The proposed method can provide large-scale re-localization under challenge terrains.**
+* **We developped a novel large-scale multi-agent exploration method.**
+* **The proposed method don't relay on initial information of other agents.**
+* **The proposed method can incrementally explore unknown environments.**
+* **The proposed method can achievely increase overlaps between agents to improve mapping.**
 
 <figure>
- <img src="/img/posts/isimloc/framework.png" style="width:100%" />
+ <img src="/img/posts/macx/active1.png" style="width:45%" />
+ <img src="/img/posts/macx/active2.png" style="width:45%" />
  <figcaption>
-For high and low altitudes, iSimLoc extracts a condition-(illumination) and viewpoint-invariant place descriptor. Only the descriptor needs to be stored and matched. Larger field of views help iSimLoc to provide an initial guess, while narrower field of view perspectives provide rich local geometry features for accurate localization. iSimLoc matches hierarchically, which enables us to balance search efficiency and accuracy.
+Given the merged map and relative pose, the exploration path will be planned hierarchically on each sub-map. The local subspace planner will plan a detailed path in its local planning subspace, which covers all the uncovered surfaces in the local space. The global planner model the coordination of the multi-agent system as a multi-Traveling salesmen problem. The final exploration path will be produced by concatenating the local and global paths.
  </figcaption>
 </figure>
 
