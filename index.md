@@ -8,7 +8,7 @@ show_sidebar: false
 hide_footer: false
 hero_height: is-large
 hero_image: /img/web.gif
-hero_link: /playground/
+hero_link: /softwares/playground/
 hero_link_text: Playground
 
 # hero_link2: /publications/

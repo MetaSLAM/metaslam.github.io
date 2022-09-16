@@ -1,59 +1,37 @@
 ---
-title: Showcase
-subtitle: An example showcase page
-description: An example showcase page to help you easily display your work
+title: ALTO
+subtitle: A Large-Scale Dataset for UAV Visual Place Recognition and Localization
+description: A Large-Scale Dataset for UAV Visual Place Recognition and Localization
 layout: page
 # showcase: showcase_example
 show_sidebar: false
 hide_footer: false
-hero_height: is-large
-hero_image: /img/web.gif
+# hero_height: is-large
+# hero_image: /img/posts/alto/uav.png
 ---
 
-## Creating A Showcase Datafile
+## Background and Major Contributions
+We present the ALTO dataset, a vision-focused dataset for developing and benchmarking Visual Place Recognition and Localization methods for Unmanned Aerial Vehicles. The dataset comprises two long (approximately 150km and 260km) trajectories flown by helicopter over Ohio and Pennsylvania. It includes high-precision GPS ground truth location data, high-precision IMU readings, laser altimeter readings, and RGB downward-facing camera imagery. In addition, we provide reference imagery over the flight paths, which makes this dataset suitable for VPR bench-marking and other tasks common in Localization, such as image registration and visual odometry. To the author's knowledge, this is the largest real-world aerial-vehicle dataset. Our dataset is available at [ALTO](https://github.com/MetaSLAM/ALTO).
 
-Create a datafile in your sites `_data` directory in the following format. Subtitle, features and tags are not required.
+<figure>
+ <img src="/img/posts/alto/alto_uav.gif" style="width:49%" />
+ <img src="/img/posts/alto/alto_raw.gif" style="width:49%" />
+ <figcaption>
+Datasets of UAV datasets from Pittsburgh to Ohio.
+ </figcaption>
+</figure>
 
-The description text accepts markdown and is run through the markdownify filter on the page.
+## Publications
 
-The image_ratio will default to is-16by9 if it is not defined and accepts the [Bulma image](https://bulma.io/documentation/elements/image/) classes.
-
-To display GitHub Stars, Forks and Watchers badges add your GitHub user and repo name to the github setting, such as `chrisrhymes/bulma-clean-theme`
-
-To change the default styles of the features, set `features_styles`. This uses the styles from [bulma-block-list](https://www.csrhymes.com/bulma-block-list/) npm package.
-
-```yaml
-intro: |-
-  This is some introduction text for the showcases.
-  
-  ## Example Heading
-  It can convert markdown format
-
-items:
-  - title: Example showcase item
-    subtitle: Example subtitle
-    description: |-
-      This is the example description for this item that you are showcasing and has an image, title, description, tags and a link.
-    features:
-      - This is a feature
-      - This is a feature
-    features_styles: is-centered is-outlined is-primary
-    image: https://via.placeholder.com/1024x788
-    image_ratio: is-16by9
-    link: http://www.example.com
-    link_text: View example
-    tags: PHP,CSS,JavaScript
-    github: user/repo-name
+*BibTeX:*
 ```
-
-## Displaying the Showcase
-
-Set the showcase in the page's front matter to be the name of the showcase data file without the extension. This gives you the ability to create multiple showcases to be used on different pages.
-
-```yaml
-title: Showcase
-subtitle: An example showcase page
-layout: page
-showcase: showcase_example
-show_sidebar: false
+@article{cisneros2022alto,
+  title={ALTO: A Large-Scale Dataset for UAV Visual Place Recognition and Localization},
+  author={Cisneros, Ivan and Yin, Peng and Zhang, Ji and Choset, Howie and Scherer, Sebastian},
+  journal={arXiv preprint arXiv:2207.12317},
+  year={2022},
+  url={https://github.com/MetaSLAM/ALTO}
+}
 ```
+### Contact
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)
