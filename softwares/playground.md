@@ -21,5 +21,5 @@ Multi-Agent Merging in Large-scale Exploration.
 </figure>
 
 
-### Contact
-* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)
+<!-- ### Contact
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com) -->

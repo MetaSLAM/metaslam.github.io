@@ -57,5 +57,5 @@ Incremental Clustering for Mulait-Agent Mapping and Localization in City of Pitt
   year={2022},
 }
 ```
-### Contact
-* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)
+<!-- ### Contact
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com) -->

@@ -39,5 +39,5 @@ For high and low altitudes, iSimLoc extracts a condition-(illumination) and view
   year={2022},
 }
 ```
-### Contact
-* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)
+<!-- ### Contact
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com) -->

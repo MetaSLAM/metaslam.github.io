@@ -40,5 +40,5 @@ Given the merged map and relative pose, the exploration path will be planned hie
   year={2022},
 }
 ```
-### Contact
-* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com)
+<!-- ### Contact
+* [Peng Yin](https://metaslam.github.io/): (hitmaxtom [at] gmail [dot] com) -->
