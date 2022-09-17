@@ -27,8 +27,8 @@ To provide the best user experience, we provide the simulation platform for mult
 </figure>
 
 <figure>
-  <img src="/img/posts/playground/over1.gif" style="width:40%" />
-  <img src="/img/posts/playground/over2.gif" style="width:40%" />
+  <img src="/img/posts/playground/over1.gif" style="width:49%" />
+  <img src="/img/posts/playground/over2.gif" style="width:49%" />
  <figcaption>
 Multi-Agent Merging in Large-scale Exploration.
  </figcaption>
