@@ -26,11 +26,11 @@
       link: /datasets/alita
     - name: ALTO
       link: /datasets/alto
-# - name: Competition
-#   dropdown:
-#     - name: IROS2022
-#       link: /competitions/iros2022
-#     - name: ICRA2023
-#       link: /competitions/icra2023
+- name: Competition
+  dropdown:
+    - name: ICRA2022
+      link: /competitions/icra2022
+    - name: ICRA2023
+      link: /competitions/icra2023
 - name: Playground
   link: /softwares/playground/

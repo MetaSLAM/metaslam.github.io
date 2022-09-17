@@ -1,6 +1,6 @@
 ---
 title: MetaSLAM
-subtitle: A Collective Localization, Mapping and Exploration Framework for Long-term and Large-scale Multi-Agent System
+subtitle: A Distributed Crowdsourcing Multi-Agent System for Large-scale and Long-term Exploration
 layout: page
 # callouts: home_callouts
 # show_sidebar: true
