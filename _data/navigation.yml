@@ -19,7 +19,7 @@
     # - name: TARE
     #   link: /softwares/tare/
     - name: MUI-TARE
-      link: /softwares/macx/
+      link: /softwares/mui_tare/
 - name: Datasets
   dropdown:
     - name: ALITA
