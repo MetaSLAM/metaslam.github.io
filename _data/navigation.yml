@@ -4,6 +4,8 @@
   dropdown:
     - name: i3dLoc
       link: /softwares/i3dLoc/
+    - name: iFastLoc
+      link: /softwares/iFastLoc/
     - name: iSimLoc
       link: /softwares/isimloc/
     - name: BioSLAM
@@ -14,6 +16,8 @@
       link: /softwares/automerge/
     - name: AutoMerge++
       link: /softwares/automerge2/
+    - name: VMerge
+      link: /softwares/vmerge/
 - name: Exploration
   dropdown:
     # - name: TARE
