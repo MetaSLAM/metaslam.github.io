@@ -1,5 +1,5 @@
 ---
-title: MACX
+title: MUI-TARE
 subtitle: Multi-Agent Cooperative Exploration with Unknown Initial Position
 description: Multi-Agent Cooperative Exploration with Unknown Initial Position
 layout: page
