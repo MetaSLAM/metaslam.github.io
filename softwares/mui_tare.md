@@ -7,7 +7,7 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: /img/posts/macx/macx.gif
+hero_image: /img/posts/mui_tare/mui_tare.gif
 ---
 ## Background and Major Contributions
 
@@ -21,8 +21,8 @@ The major contributions of MACX include:
 * **The proposed method can achievely increase overlaps between agents to improve mapping.**
 
 <figure>
- <img src="/img/posts/macx/active1.png" style="width:45%" />
- <img src="/img/posts/macx/active2.png" style="width:45%" />
+ <img src="/img/posts/mui_tare/active1.png" style="width:45%" />
+ <img src="/img/posts/mui_tare/active2.png" style="width:45%" />
  <figcaption>
 Given the merged map and relative pose, the exploration path will be planned hierarchically on each sub-map. The local subspace planner will plan a detailed path in its local planning subspace, which covers all the uncovered surfaces in the local space. The global planner model the coordination of the multi-agent system as a multi-Traveling salesmen problem. The final exploration path will be produced by concatenating the local and global paths.
  </figcaption>

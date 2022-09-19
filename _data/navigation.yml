@@ -12,8 +12,8 @@
   dropdown:
     - name: AutoMerge
       link: /softwares/automerge/
-    # - name: AutoMerge++
-    #   link: /softwares/automerge2/
+    - name: AutoMerge++
+      link: /softwares/automerge2/
 - name: Exploration
   dropdown:
     # - name: TARE
