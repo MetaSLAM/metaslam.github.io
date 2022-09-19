@@ -7,7 +7,7 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: /img/posts/spherevlad/360cam.gif
+hero_image: /img/posts/i3dLoc/i3dLoc.gif
 ---
 
 <hr>
@@ -26,7 +26,7 @@ The major contributions of 360Loc are:
 <hr>
 
 <figure>
- <img src="/img/posts/spherevlad/framework.png" style="width:100%" />
+ <img src="/img/posts/i3dLoc/framework.png" style="width:100%" />
  <figcaption>
 Feature extraction networks for 360cam localization.  
  </figcaption>
@@ -43,8 +43,8 @@ The training and evaluation dataset includes:
 * Multistory Dataset: we create a indoor dataset by traversing 8 trajectories within a multi-floor area under daytime/nighttime. The average distance for indoor routines is 100~150m. We use trajectories 1~6 for network training, and 7~8 for evaluation.
 
 <figure>
- <img src="/img/posts/spherevlad/2d3d.gif" style="width:45%" />
- <img src="/img/posts/spherevlad/map.png" style="width:44%" />
+ <img src="/img/posts/i3dLoc/2d3d.gif" style="width:45%" />
+ <img src="/img/posts/i3dLoc/map.png" style="width:44%" />
  <figcaption>
 
     The dataset are collected with a LiDAR (VLP16) device, an 360 camera and an inertial measurement unit (IMU). We gathered the indoor and outdoor datasets via recording the raw data from above sensors. Since lacking the ground truth position in indoor or other GPS-denied environments, we use the LiDAR odometry outputs as the ground truth estimation.

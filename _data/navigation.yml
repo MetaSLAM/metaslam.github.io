@@ -2,8 +2,8 @@
 #   link: /research/
 - name: Localization
   dropdown:
-    - name: 360Loc
-      link: /softwares/360loc/
+    - name: i3dLoc
+      link: /softwares/i3dLoc/
     - name: iSimLoc
       link: /softwares/isimloc/
     - name: BioSLAM
