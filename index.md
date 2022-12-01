@@ -21,11 +21,17 @@ hero_link_text: Playground
 # About MetaSLAM
 
 MetaSLAM is a collective intelligence framework for multi-agent systems under large-scale and long-term opeartion, which includes the current cutting-edge **localization**, **mapping**, **exploration** approaches.
- <!-- MetaSLAM is also a joint organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries for real-world robotic applications. -->
-<!-- We are combined with the top-researchers abround the world, [Carnegie Mellon University](https://www.cmu.edu/),  -->
+ MetaSLAM is also a joint organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries for real-world robotic applications. We are combined with the top-researchers abround the world, [Carnegie Mellon University](https://www.cmu.edu/).
 
 ## Our Mission
-To explore the vast reach of our solar system and distant galaxies, autonomous robots play an important role in extending human ability, especially when the environment is hazardous and teleoperation is practically impossible due to the long distance. Similar missions arise in applications such as underground mining and search-and-rescue in the wild, where multiple robots need to collectively explore a largely unknown environment for days or weeks in the presence of limited communication in terms of connectivity and bandwidth, varying environmental conditions such as dust and fog, and complex intraversable terrains for the robots. As a fundamental problem in robotics, autonomous exploration has been investigated by researchers for decades with the focus on various aspects of the problem. However, most of the existing work considers exploration tasks that last for a few hours in a row, and has little consideration for the large-scale environment and long-term autonomous exploration as required by space exploration and search-and-rescue in the wild. Built upon existing techniques, MetaSLAM takes one step forwards to address large-scale environments and long-term autonomous exploration.
+
+MetaSLAM provides the following core approaches:
+
+* **Multi-sensor Fusion based UAV Localization and Navigation.**
+* **City-scale Map Merging.**
+* **Large-scale indoor 360cam Navigation.**
+* **Multi-agent Cooperation.**
+* **Lifelong Learning for Long-term Perception.**
 
 <!-- # Highlights
 {% assign posts = site.posts | where:"categories","highlights" %}
