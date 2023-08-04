@@ -37,12 +37,12 @@ Based on the above abilities, we hope MetaSLAM can benefit for more researchers 
 
 ## News
 
-* <font color=#00BFFF>2023-08-01</font> We are hosting a [competition](https://metaslam.github.io/competitions/icra2023/) at IROS 2023 workshop [Closing the Loop on Localization](https://oravus.github.io/vpr-workshop/) with [Prof. Sebastian Scherer](https://theairlab.org/), which aims at the application of place recognition in mapping merging systems or C-SLAM systems.
+* *2023-08-01* We are hosting a [competition](https://metaslam.github.io/competitions/icra2023/) at IROS 2023 workshop [Closing the Loop on Localization](https://oravus.github.io/vpr-workshop/) with [Prof. Sebastian Scherer](https://theairlab.org/), which aims at the application of place recognition in mapping merging systems or C-SLAM systems.
 
-* <font color=#00BFFF>2023-07-31</font> Our paper "**BioSLAM: A Bio-inspired Lifelong Memory System for General Place
+* *2023-07-31* Our paper "**BioSLAM: A Bio-inspired Lifelong Memory System for General Place
 Recognition**" is accepted by IEEE Transactions on Robotics.
 
-* <font color=#00BFFF>2023-06-22</font> Our paper "**AutoMerge: A Framework for Map Assembling and Smoothing in City-scale
+* *2023-06-22* Our paper "**AutoMerge: A Framework for Map Assembling and Smoothing in City-scale
 Environments**" is accepted by IEEE Transactions on Robotics.
 
 <!-- # Highlights
