@@ -14,10 +14,10 @@
   dropdown:
     - name: AutoMerge
       link: /softwares/automerge/
-    - name: AutoMerge++
-      link: /softwares/automerge2/
-    - name: VMerge
-      link: /softwares/vmerge/
+    # - name: AutoMerge++
+    #   link: /softwares/automerge2/
+    # - name: VMerge
+    #   link: /softwares/vmerge/
 - name: Exploration
   dropdown:
     # - name: TARE
@@ -34,7 +34,9 @@
   dropdown:
     - name: ICRA2022
       link: /competitions/icra2022
-    - name: ICRA2023
-      link: /competitions/icra2023
+    - name: IROS2023
+      link: /competitions/iros2023
+- name: Openings:
+  link: /openings/openings.md
 - name: Playground
   link: /softwares/playground/
