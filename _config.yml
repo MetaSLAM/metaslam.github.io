@@ -1,7 +1,7 @@
 # Site Settings
 lang: en
-title: MetaSLAM
-tagline: MetaSLAM
+title: GairLab
+tagline: GairLab
 email: hitmaxtom@gmail.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
@@ -27,7 +27,7 @@ disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   # shortname: my_disqus_shortname
-  shortname: csrhymes
+  shortname: gairlab
 
 
 plugins:
@@ -87,9 +87,9 @@ collections:
     image: https://via.placeholder.com/800x600
     show_sidebar: false
 
-# scholar:
-#   style: simple-ieee.csl
-#   bibliography_list_tag: "ul.no-bullet"
-  # bibliography_template: bibtemplate
+scholar:
+  style: simple-ieee.csl
+  bibliography_list_tag: "ul.no-bullet"
+  bibliography_template: bibtemplate
 
-# exclude: [vendor]
+exclude: [vendor]

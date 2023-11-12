@@ -1,29 +1,58 @@
-<div class="card">
+{% if post.redirect %}
+<a href="{{ post.redirect }}" target="_blank">
+{% else %}
+<a href="{{ site.baseurl }}{{ post.url }}">
+{% endif %}
+<div class="card" style="height: 100%; display: flex; flex-direction: column; align-items: center;">
     {% if post.image %}
-    <div class="card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}">
-    </div>
+        <div style="height: 200px;">
+            <img src="{{ post.image }}" alt="{{ post.title }}" style="object-fit: contain; height: 100%;">
+        </div>
     {% else %}
     <header class="card-header">
-        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+        <div class="card-header-title">{{ post.title}}</div>
     </header>
     {% endif %}
-    <div class="card-content">
+    <div class="card-content" style="flex-grow: 3;">
         <div class="content">
             {% if post.image %}
-            <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+            <div class="title is-5">{{ post.title}}</div>
             {% endif %}
-            {% if post.summary %}
-                {{ post.summary | markdownify }}
-            {% else %}
-                <p>{{ post.excerpt }}</p>
-            {% endif %}
-        </div>
-        <div class="has-text-centered">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
+            <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
         </div>
     </div>
     <footer class="card-footer">
         <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
     </footer>
 </div>
+</a>
+
+<!-- <div class="card"> -->
+    <!-- {% if post.image %} -->
+    <!-- <div class="card-image"> -->
+        <!-- <img src="{{ post.image }}" alt="{{ post.title }}"> -->
+    <!-- </div> -->
+    <!-- {% else %} -->
+    <!-- <header class="card-header"> -->
+        <!-- <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a> -->
+    <!-- </header> -->
+    <!-- {% endif %} -->
+    <!-- <div class="card-content"> -->
+        <!-- <div class="content"> -->
+            <!-- {% if post.image %} -->
+            <!-- <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a> -->
+            <!-- {% endif %} -->
+            <!-- {% if post.summary %} -->
+                <!-- {{ post.summary | markdownify }} -->
+            <!-- {% else %} -->
+                <!-- <p>{{ post.excerpt }}</p> -->
+            <!-- {% endif %} -->
+        <!-- </div> -->
+        <!-- <div class="has-text-centered"> -->
+            <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- <footer class="card-footer"> -->
+        <!-- <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p> -->
+    <!-- </footer> -->
+<!-- </div> -->

@@ -11,9 +11,33 @@ layout: default
     </div>
 
     <div class="column is-6">
-        <p class="title is-3">{{ page.title }}</p>
-        <p class="subtitle is-3">{{ page.subtitle }}</p>
-        <p class="title is-4 has-text-right">{{ page.price }}</p>
+        <!-- <p class="title is-3">{{ page.title }}</p> -->
+        <!-- <p class="subtitle is-3">{{ page.subtitle }}</p> -->
+        <!-- <p class="title is-4 has-text-right">{{ page.price }}</p> -->
+        <p>{{page.intro}}</p>
+        <br>
+
+        {% if page.website %}
+        <p class="title is-4">Personal Website</p>
+        <a href={{page.website}}>{{ page.website }}</a>
+        <br>
+        <br>
+        {% endif %}
+        
+        {% if page.scholar %}
+        <p class="title is-4">Google Scholar</p>
+        <a href={{page.scholar}}>{{ page.scholar }}</a>
+        <br>
+        <br>
+        {% endif %}
+        
+        {% if page.email %}
+        <p class="title is-4">Email</p>
+        <a href={{page.email}}>{{ page.email }}</a>
+        <br>
+        <br>
+        {% endif %}
+
         {% if page.product_code %}
         <p class="subtitle is-5 has-text-right">{{ page.product_code }}</p>
         {% endif %}
@@ -39,6 +63,7 @@ layout: default
         {% endif %}
     </div>
 
+    {% if page.description %}
     <div class="column is-12">
         <p class="title is-4">Description</p>
         <div class="content">
@@ -47,6 +72,7 @@ layout: default
             {{ content }}
         </div>
     </div>
+    {% endif %}
 
     {% if site.data.reviews[page.product_code] %}
     <div class="column is-12">

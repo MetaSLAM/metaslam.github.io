@@ -1,5 +1,5 @@
 <div x-data="{ open: false }" markdown="0">
-    <a x-on:click="open = true" title="View large image">
+    <a x-on:click="open = false" title="View large image">
         <figure class="image {{ include.ratio | default: is-16by9 }}">
             <img src="{{ include.link | absolute_url }}" alt="{{ include.alt }}">
         </figure>

@@ -1,29 +1,15 @@
-# - name: Research
-#   link: /research/
-- name: Localization
+- name: Team
+  link: /team/team/
+- name: Research
   dropdown:
-    - name: i3dLoc
-      link: /softwares/i3dLoc/
-    - name: iFastLoc
-      link: /softwares/iFastLoc/
-    - name: iSimLoc
-      link: /softwares/isimloc/
-    - name: BioSLAM
-      link: /softwares/bioslam/
-- name: Mapping
-  dropdown:
-    - name: AutoMerge
-      link: /softwares/automerge/
-    # - name: AutoMerge++
-    #   link: /softwares/automerge2/
-    # - name: VMerge
-    #   link: /softwares/vmerge/
-- name: Exploration
-  dropdown:
-    # - name: TARE
-    #   link: /softwares/tare/
-    - name: MUI-TARE
-      link: /softwares/mui_tare/
+    - name: Localization
+      link: /research/localization/
+    - name: Mapping
+      link: /research/mapping/
+    - name: Exploration
+      link: /research/exploration/
+- name: Publications
+  link: /publications/pubs/
 - name: Datasets
   dropdown:
     - name: ALITA
@@ -32,11 +18,13 @@
       link: /datasets/alto
 - name: Competition
   dropdown:
-    - name: ICRA2022
-      link: /competitions/icra2022
+    # - name: ICRA2022
+    #   link: /competitions/icra2022
     - name: IROS2023
       link: /competitions/iros2023
-- name: Openings
+# - name: Openings
+#   link: /openings/openings
+- name: Contact
   link: /openings/openings
-- name: Playground
-  link: /softwares/playground/
+# - name: Playground
+#   link: /softwares/playground/

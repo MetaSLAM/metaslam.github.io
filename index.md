@@ -1,27 +1,23 @@
 ---
-title: MetaSLAM
-subtitle: A Distributed Crowdsourcing Multi-Agent System for Large-scale and Long-term Exploration
+title: GairLab
+subtitle: Empowering Robotic Intelligence in Vast and Persistent Realms
 layout: page
 # callouts: home_callouts
-# show_sidebar: true
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
 hero_image: /img/web.gif
-hero_link: /softwares/playground/
-hero_link_text: Playground
 
-# hero_link2: /publications/
-# hero_link_text2: Publications
-
-# hero_link3: /playground/
-# hero_link_text3: Playground
+hero_link: /team/team/
+hero_link_text: Current Members
+hero_link2: /publications/pubs/
+hero_link_text2: Publications
 ---
 
-# About MetaSLAM
+# About Us
+The mission of GairLab is to integrate cutting-edge [**Localization**](/research/localization), [**Mapping**](/research/mapping), and [**Exporation**](/research/exploration) methodologies to provide a collective intelligence framework for multi-agent systems operating on a large scale and over extended periods.
 
-MetaSLAM is a collective intelligence framework for multi-agent systems under large-scale and long-term opeartion, which includes the current cutting-edge **localization**, **mapping**, **exploration** approaches.
- MetaSLAM is also a joint organization to leverage the top researchers within **field robotics** domain, and extending the current boundaries for real-world robotic applications. We are combined with the top-researchers abround the world, [Carnegie Mellon University](https://www.cmu.edu/).
+We also founded ***MetaSLAM***, a joint organization to leverage the top researchers within **Field Robotics** domain, and extending the current boundaries for real-world robotic applications. We are combined with the top-researchers abround the world.
 
 ## Our Abilities
 
