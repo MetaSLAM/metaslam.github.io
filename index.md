@@ -17,7 +17,7 @@ hero_link_text2: Publications
 # About Us
 The mission of GairLab is to integrate cutting-edge [**Localization**](/research/localization), [**Mapping**](/research/mapping), and [**Exporation**](/research/exploration) methodologies to provide a collective intelligence framework for multi-agent systems operating on a large scale and over extended periods.
 
-We also founded ***MetaSLAM***, a joint organization to leverage the top researchers within **Field Robotics** domain, and extending the current boundaries for real-world robotic applications. We are combined with the top-researchers abround the world.
+We also founded ***MetaSLAM***, a joint organization to leverage the top researchers within **Field Robotics** domain, and extending the current boundaries for real-world robotic applications. We are combined with the top-researchers around the world.
 
 ## Our Abilities
 
